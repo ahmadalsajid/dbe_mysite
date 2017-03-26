@@ -101,3 +101,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# sending email settinngs
+from .email_credentials import credentials
+EMAIL_HOST = credentials['EMAIL_HOST']
+EMAIL_HOST_USER = credentials['EMAIL_HOST_USER']
+EMAIL_HOST_PASSWORD = credentials['EMAIL_HOST_PASSWORD']
+EMAIL_PORT = credentials['EMAIL_PORT']
+EMAIL_USE_TLS = credentials['EMAIL_USE_TLS']
